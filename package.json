@@ -1,0 +1,119 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "basename": "/",
+  "dependencies": {
+    "@material-ui/core": "4.11.3",
+    "@material-ui/lab": "4.0.0-alpha.57",
+    "babel-preset-react-app": "^10.0.0",
+    "bootstrap": "^4.6.0",
+    "emailjs-com": "2.6.4",
+    "eslint-config-react-app": "^6.0.0",
+    "glob-all": "^3.2.1",
+    "google-map-react": "^2.1.9",
+    "jest-environment-jsdom-fourteen": "^1.0.1",
+    "jest-watch-typeahead": "^0.6.1",
+    "purgecss-webpack-plugin": "^4.1.3",
+    "react": "^17.0.1",
+    "react-accessible-accordion": "^3.3.4",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-app-polyfill": "^2.0.0",
+    "react-bootstrap": "^1.5.1",
+    "react-countup": "^4.3.3",
+    "react-dev-utils": "^11.0.4",
+    "react-dom": "^17.0.1",
+    "react-ga": "^3.3.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.2.0",
+    "react-image-lightbox": "^5.1.1",
+    "react-modal-video": "^1.2.6",
+    "react-parallax": "^3.2.1",
+    "react-particles-js": "^3.4.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "react-scroll-up": "^1.3.7",
+    "react-scrollspy": "^3.4.3",
+    "react-slick": "^0.28.1",
+    "react-tabs": "^3.2.0",
+    "react-text-loop": "^2.3.0",
+    "react-visibility-sensor": "^5.1.1",
+    "sass": "^1.32.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postbuild": "purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "setupFiles": [
+      "react-app-polyfill/jsdom"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+    ],
+    "testEnvironment": "jest-environment-jsdom-fourteen",
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "modulePaths": [],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web",
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "web.ts",
+      "ts",
+      "web.tsx",
+      "tsx",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ],
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1.3"
+  }
+}
